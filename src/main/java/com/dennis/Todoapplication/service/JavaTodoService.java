@@ -21,7 +21,7 @@ public class JavaTodoService {
 
     public Integer createTask(CreateTaskDto createTaskDto) {
         JavaTodo javaTodo = mapper.toCreateTask(createTaskDto);
-        return repo.save(javaTodo.getId());
+        return repo.save(javaTodo).getId();
 
     }
 

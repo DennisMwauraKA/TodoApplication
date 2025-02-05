@@ -13,10 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("api/v1")
 public class JavaTodoController {
-    // 3types of dependecy injection
-    // field injection
-    // setter injection
-    //constructor injection
+
 
 
     public JavaTodoController(JavaTodoService service ) {
